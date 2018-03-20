@@ -1,0 +1,15 @@
+package edu.neu.csye6200.api;
+
+class Java8Tester {
+	@FunctionalInterface
+	public interface GreatDivide {
+		int divide(int t1, int t2);
+	}
+	public static void simpleLambda() {
+		GreatDivide intDivide = (int x, int y) -> x / y;
+		System.out.println(intDivide.divide (21, 3));
+	}
+	public static void main(String args[]) {
+		Java8Tester.simpleLambda();
+	}
+}
